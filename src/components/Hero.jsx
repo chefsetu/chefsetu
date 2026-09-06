@@ -1,4 +1,5 @@
 import { openApplicationForm } from '../config';
+import mainImage from "../assets/main.png";
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover opacity-40"
-          src="src/assets/main.png"
+          src={mainImage}
           alt="Professional kitchen team"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
