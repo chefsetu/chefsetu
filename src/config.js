@@ -1,5 +1,5 @@
 // Replace this with your actual Google Form URL
-export const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform";
+export const GOOGLE_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8";
 
 export const EMPLOYER_FORM_URL = GOOGLE_FORM_URL; // Can be changed later if needed
 

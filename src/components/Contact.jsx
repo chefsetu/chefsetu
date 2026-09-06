@@ -57,7 +57,7 @@ const Contact = () => {
             Apply Now
           </button>
           <a 
-            href="mailto:info@chefsetu.com" 
+            href="mailto:chefsetu.com@gmail.com" 
             className="w-full sm:w-auto px-8 py-4 border-2 border-slate-200 text-slate-700 hover:border-slate-900 hover:text-slate-900 rounded-lg font-bold text-lg transition-all duration-300 text-center"
           >
             Contact Us
