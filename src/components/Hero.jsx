@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover opacity-40"
-          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          src="src/assets/main.png"
           alt="Professional kitchen team"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
