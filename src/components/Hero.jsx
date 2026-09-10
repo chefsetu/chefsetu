@@ -12,20 +12,20 @@ const Hero = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 sm:py-40 lg:py-48 flex flex-col items-center text-center">
         <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase bg-orange-500/20 text-orange-400 border border-orange-500/30 mb-6">
-          Premium Hospitality Careers
+          Premium Culinary Careers
         </span>
         
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-8 max-w-4xl">
-          Elevate Your Career in <span className="text-orange-500 block sm:inline">Hospitality</span>
+          Your Culinary Career <span className="text-orange-500 block sm:inline">Starts Here</span>
         </h1>
         
-        <p className="mt-4 text-xl sm:text-2xl text-slate-300 max-w-2xl mx-auto font-light mb-10">
-          Connect directly with top-tier hotels, luxury restaurants, and professional culinary teams actively hiring talent.
+        <p className="mt-4 text-lg sm:text-1xl text-slate-300 max-w-1xl mx-auto font-light mb-10">
+         Connect with hotels, restaurants and hospitality employers looking for culinary talent. Discover jobs, internships and career opportunities built for chefs, cooks, bakers, and culinary professionals. Start your journey to a fulfilling culinary career today.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <Link to="/jobs" className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-md text-slate-900 bg-white hover:bg-gray-100 transition-colors shadow-lg">
-            Explore Openings
+            Find Chef Jobs
           </Link>
           <button onClick={openApplicationForm} className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border-2 border-orange-500 text-lg font-bold rounded-md text-white hover:bg-orange-500 transition-colors shadow-lg">
             Submit Application
