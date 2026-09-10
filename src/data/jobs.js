@@ -70,7 +70,7 @@ export const jobs = [
       "Physical stamina."
     ],
     benefits: ["Duty Meals", "Training Provided"],
-    image: "https://images.unsplash.com/photo-1595231710896-458428574169?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://media.istockphoto.com/id/164850553/photo/chefs-cooking-in-restaurant-kitchen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Mctv8-le5hW_XZqeWROVSrEtPNN5QM2MRGeN8oo1_kA="
   },
   {
     id: 4,
