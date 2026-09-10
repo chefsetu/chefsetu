@@ -1,55 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import JobListings from './components/JobListings.jsx';
-import Categories from './components/Categories.jsx';
-import CareerSection from './components/CareerSection.jsx';
-import WhyChefSetu from './components/WhyChefSetu.jsx';
-import HowItWorks from './components/HowItWorks.jsx';
-import CTA from './components/CTA.jsx';
-import EmployerSection from './components/EmployerSection.jsx';
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
-const components = new Map([
-  ['navbar', Navbar],
-  ['hero', Hero],
-  ['jobListings', JobListings],
-  ['categories', Categories],
-  ['career', CareerSection],
-  ['whyChefSetu', WhyChefSetu],
-  ['howItWorks', HowItWorks],
-  ['cta', CTA],
-  ['employer', EmployerSection],
-  ['about', About],
-  ['contact', Contact],
-  ['footer', Footer],
-]);
+// Pages
+import Home from './pages/Home.jsx';
+import JobsPage from './pages/JobsPage.jsx';
+import CareersPage from './pages/CareersPage.jsx';
+import EmployersPage from './pages/EmployersPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 
 function App() {
-  const sections = [
-    'navbar',
-    'hero',
-    'jobListings',
-    'categories',
-    'career',
-    'whyChefSetu',
-    'howItWorks',
-    'cta',
-    'employer',
-    'about',
-    'contact',
-    'footer',
-  ];
-
   return (
-    <div className="min-h-screen">
-      {sections.map((section) => {
-        const Component = components.get(section);
+    <Router>
+      <div className="min-h-screen bg-slate-50 font-sans flex flex-col">
+        <Navbar />
+        
+        {/* Main Content Area */}
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/jobs" element={<JobsPage />} />
+            <Route path="/careers" element={<CareersPage />} />
+            <Route path="/employer" element={<EmployersPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </main>
 
-        return Component ? <Component key={section} /> : null;
-      })}
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

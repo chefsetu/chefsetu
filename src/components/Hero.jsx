@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { openApplicationForm } from '../config';
 import mainImage from "../assets/main.png";
 
@@ -5,11 +6,7 @@ const Hero = () => {
   return (
     <div className="relative bg-slate-900 pt-20">
       <div className="absolute inset-0">
-        <img
-          className="w-full h-full object-cover opacity-40"
-          src={mainImage}
-          alt="Professional kitchen team"
-        />
+        <img className="w-full h-full object-cover opacity-40" src={mainImage} alt="Professional kitchen team" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
       </div>
       
@@ -27,16 +24,10 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <a 
-            href="#jobs" 
-            className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-md text-slate-900 bg-white hover:bg-gray-100 transition-colors shadow-lg"
-          >
+          <Link to="/jobs" className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-md text-slate-900 bg-white hover:bg-gray-100 transition-colors shadow-lg">
             Explore Openings
-          </a>
-          <button 
-            onClick={openApplicationForm}
-            className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border-2 border-orange-500 text-lg font-bold rounded-md text-white hover:bg-orange-500 transition-colors shadow-lg"
-          >
+          </Link>
+          <button onClick={openApplicationForm} className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border-2 border-orange-500 text-lg font-bold rounded-md text-white hover:bg-orange-500 transition-colors shadow-lg">
             Submit Application
           </button>
         </div>
@@ -44,5 +35,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;
