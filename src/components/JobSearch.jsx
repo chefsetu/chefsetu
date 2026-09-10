@@ -25,8 +25,30 @@ const JobSearch = ({ filters, setFilters }) => {
           <FiMapPin className="text-slate-400 mr-3 text-lg" />
           <select name="location" value={filters.location} onChange={handleChange} className="bg-transparent w-full outline-none text-slate-700 font-medium cursor-pointer appearance-none">
             <option value="">All Locations</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="hyderabad">Hyderabad</option>
+                <option value="secunderabad">Secunderabad</option>
+                <option value="banjara-hills">Banjara Hills</option> 
+                <option value="jubilee-hills">Jubilee Hills</option>
+                <option value="madhapur">Madhapur</option> 
+                <option value="hitec-city">HITEC City</option> 
+                <option value="gachibowli">Gachibowli</option> 
+                <option value="kondapur">Kondapur</option>
+                <option value="kukatpally">Kukatpally</option> 
+                <option value="miyapur">Miyapur</option>
+                <option value="bachupally">Bachupally</option>
+                <option value="uppal">Uppal</option>
+                <option value="lb-nagar">LB Nagar</option>
+                <option value="dilsukhnagar">Dilsukhnagar</option>
+                <option value="mehdipatnam">Mehdipatnam</option>
+                <option value="tolichowki">Tolichowki</option>
+                <option value="attapur">Attapur</option>
+                <option value="kompally">Kompally</option>
+                <option value="sainikpuri">Sainikpuri</option>
+                <option value="shamshabad">Shamshabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Benguluru">Benguluru</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
             <option value="Pune">Pune</option>
           </select>
         </div>
@@ -39,6 +61,15 @@ const JobSearch = ({ filters, setFilters }) => {
             <option value="Kitchen">Kitchen</option>
             <option value="Food & Beverage">Food & Beverage</option>
             <option value="Housekeeping">Housekeeping</option>
+            <option value="Executive Chef">Executive Chef</option>
+            <option value="Chef de Partie">Chef de Partie</option>
+            <option value="Commis Chef">Commis Chef</option>
+            <option value="International ">International </option>
+            <option value="Cuisine  Chef">Cuisine</option>
+            <option value="Bakery & Pastry">Bakery & Pastry</option>
+            <option value="Specialty Chef">Specialty Chef</option>
+            <option value="Sous Chef ">Sous Chef </option>
+            
           </select>
         </div>
 
