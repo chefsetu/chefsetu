@@ -2,27 +2,54 @@ import { FiArrowRight, FiTrendingUp, FiGlobe, FiAward, FiCheckCircle } from 'rea
 import { openApplicationForm } from '../config';
 
 const CareersPage = () => {
-  // Your core career tracks
   const careers = [
     { 
-      title: "Chef & Culinary Arts", 
-      desc: "Master your craft in professional kitchens. From Commis to Executive Chef, lead culinary excellence and create unforgettable dining experiences.", 
+      title: "Professional Kitchen Chef", 
+      flowLabel: "Standard Hierarchy",
+      flow: "Commis (III, II, I) ➔ Demi Chef de Partie ➔ Chef de Partie ➔ Sous Chef ➔ Executive Chef",
+      targetLabel: "For:",
+      targetDesc: "Chefs who want to build a long-term career in hotels, restaurants, and resorts.",
       img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
-      title: "Hotel Operations", 
-      desc: "Build a rewarding career in premium hotel management, front office, housekeeping, and guest relations. Be the face of world-class hospitality.", 
-      img: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      title: "International Chef", 
+      flowLabel: "Career Opportunities",
+      flow: "Hotels ➔ Resorts ➔ Cruise Ships ➔ International Restaurants ➔ Overseas",
+      targetLabel: "For:",
+      targetDesc: "Chefs looking to build an international culinary career.",
+      img: "https://plus.unsplash.com/premium_photo-1687697860916-b05b982decbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8SW50ZXJuYXRpb25hbCUyMENoZWZ8ZW58MHx8MHx8fDA%3D" 
     },
     { 
-      title: "Restaurant Management", 
-      desc: "Join dynamic teams in high-end dining spaces. Manage front-of-house operations, staff coordination, and ensure flawless customer service.", 
-      img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      title: "Bakery & Pastry", 
+      flowLabel: "Career Progression",
+      flow: "Commis Pastry ➔ Pastry Chef ➔ Sous Pastry Chef ➔ Executive Pastry Chef",
+      targetLabel: "Specializations:",
+      targetDesc: "Bakery • Pastry • Cakes • Chocolates • Desserts",
+      img: "https://images.unsplash.com/photo-1534432182912-63863115e106?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QmFrZXJ5JTIwJTI2JTIwUGFzdHJ5fGVufDB8fDB8fHww" 
     },
     { 
-      title: "Hospitality Internships", 
-      desc: "Start your journey with hands-on experience. Get professional mentorship and build a strong foundation for a long-term hospitality career.", 
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+      title: "Specialty Cuisine Chef", 
+      flowLabel: "Build Expertise In",
+      flow: "Indian • South Indian • North Indian • Tandoor • Chinese • Continental • Italian • Asian • Japanese • Middle Eastern",
+      targetLabel: "For:",
+      targetDesc: "Chefs who want to specialize and become experts in a particular cuisine.",
+      img: "https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+      title: "Private & Personal Chef", 
+      flowLabel: "Career Opportunities",
+      flow: "Private Homes ➔ Luxury Villas ➔ Celebrity Clients ➔ Yacht Chef ➔ Personal Chef",
+      targetLabel: "For:",
+      targetDesc: "Experienced chefs looking for personalized and premium culinary careers.",
+      img: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+      title: "Culinary Leadership", 
+      flowLabel: "Career Directions",
+      flow: "Executive Chef ➔ Culinary Director ➔ Corporate Chef ➔ Consultant ➔ Restaurant Owner",
+      targetLabel: "For:",
+      targetDesc: "Chefs who want to move beyond the kitchen and build leadership or business careers.",
+      img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     }
   ];
 
@@ -63,10 +90,10 @@ const CareersPage = () => {
             Discover Your Path
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 max-w-4xl mx-auto">
-            Find Your Calling in <span className="text-orange-500">Hospitality</span>
+            Explore Career Paths for <span className="text-orange-500">Chefs</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-            Whether your passion lies in crafting culinary masterpieces or delivering exceptional guest experiences, ChefSetu connects you to the perfect role.
+           From your first kitchen role to leading a professional kitchen, ChefSetu helps you discover the right career path, skills, and opportunities for your culinary journey.
           </p>
         </div>
       </section>
@@ -76,14 +103,14 @@ const CareersPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Explore Career Tracks
+              Explore Chef Career Paths
             </h2>
             <p className="text-lg text-slate-600">
               Select an area of expertise to find roles tailored to your skills, experience, and career ambitions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {careers.map((career, idx) => (
               <div 
                 key={idx} 
@@ -91,7 +118,7 @@ const CareersPage = () => {
                 onClick={openApplicationForm}
               >
                 {/* Image Section */}
-                <div className="sm:w-2/5 relative h-64 sm:h-auto overflow-hidden bg-slate-100">
+                <div className="sm:w-2/5 relative h-64 sm:h-auto overflow-hidden bg-slate-100 shrink-0">
                   <img 
                     src={career.img} 
                     alt={career.title} 
@@ -101,13 +128,30 @@ const CareersPage = () => {
                 </div>
 
                 {/* Text Content */}
-                <div className="sm:w-3/5 p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
+                <div className="sm:w-3/5 p-6 sm:p-8 flex flex-col justify-center">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors">
                     {career.title}
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    {career.desc}
-                  </p>
+                  
+                  {/* Career Progression Flow */}
+                  <div className="mb-4">
+                    <span className="text-xs font-bold uppercase tracking-wider text-orange-500 block mb-1">
+                      {career.flowLabel}
+                    </span>
+                    <p className="text-sm font-medium text-slate-700 leading-relaxed">
+                      {career.flow}
+                    </p>
+                  </div>
+
+                  {/* Target Audience Highlight Box */}
+                  <div className="mb-6 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                    <p className="text-sm text-slate-600 leading-relaxed">
+                      <span className="font-bold text-slate-800">{career.targetLabel} </span>
+                      {career.targetDesc}
+                    </p>
+                  </div>
+
+                  {/* CTA */}
                   <button className="inline-flex items-center text-orange-500 font-bold text-sm tracking-wide uppercase mt-auto">
                     View Opportunities 
                     <FiArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" />
