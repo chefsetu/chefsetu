@@ -51,10 +51,10 @@ const AboutPage = () => {
             Our Story
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 max-w-4xl mx-auto">
-            Connecting <span className="text-orange-500">Talent</span> With Opportunity
+            Connecting <span className="text-orange-500">Chefs</span>  With the Right Opportunities
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
-            ChefSetu is on a mission to revolutionize how hospitality professionals find their dream roles and how premium properties build their teams.
+           ChefSetu bridges the gap between talented chefs and leading kitchens. We help chefs discover the right roles, grow their careers, and connect with employers looking for skilled culinary professionals across India and international markets.
           </p>
         </div>
       </section>
