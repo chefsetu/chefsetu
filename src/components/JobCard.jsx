@@ -22,8 +22,17 @@ const JobCard = ({ job, onViewDetails }) => {
       
       {/* Content */}
       <div className="p-6 flex-grow flex flex-col">
-        <h3 className="text-xl font-bold text-slate-900 mb-2 line-clamp-1">{job.title}</h3>
-        <p className="text-slate-500 text-sm mb-5 line-clamp-2 leading-relaxed">{job.description}</p>
+       <h3 className="text-xl font-bold text-slate-900 mb-1 line-clamp-1">
+           {job.title}
+          </h3>
+
+          <p className="text-sm font-semibold text-orange-600 mb-2">
+            {job.company}
+          </p>
+
+          <p className="text-slate-500 text-sm mb-5 line-clamp-2 leading-relaxed">
+            {job.description}
+          </p>
         
         <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-sm text-slate-700 mt-auto mb-6">
           <div className="flex items-center gap-2"><FiMapPin className="text-orange-500 shrink-0" /> <span className="truncate">{job.location}</span></div>

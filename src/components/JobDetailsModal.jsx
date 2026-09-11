@@ -22,7 +22,13 @@ const JobDetailsModal = ({ job, onClose }) => {
         {/* Header */}
         <div className="p-6 md:p-8 border-b border-slate-100">
           {job.urgent && <span className="inline-block bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Urgent Hiring</span>}
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">{job.title}</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-1">
+              {job.title}
+            </h2>
+
+            <p className="text-sm font-semibold text-orange-600 mb-4">
+              {job.company}
+            </p>
           
           <div className="flex flex-wrap gap-3 text-sm text-slate-600 mb-6">
             <span className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-full"><FiMapPin className="text-orange-500" /> {job.location}</span>

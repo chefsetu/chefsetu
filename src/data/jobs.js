@@ -1,29 +1,32 @@
+import damImage from "../assets/dam.jpeg";
+
 export const jobs = [
   {
-    id: 1,
-    title: "South Indian Master Chef",
-    category: "Chef",
-    location: "Navi Mumbai",
-    salary: "₹50,000 / Month",
-    experience: "Experienced (5+ Years)",
-    openings: 2,
-    employmentType: "Full-Time",
-    urgent: true,
-    description: "Looking for an experienced South Indian Master Chef with strong knowledge of authentic South Indian cuisine and tiffin preparation.",
-    responsibilities: [
-      "Prepare authentic South Indian dishes including Idli, Dosa, Vada, and various chutneys.",
-      "Manage kitchen inventory and ensure raw material quality.",
-      "Train and supervise junior kitchen staff.",
-      "Maintain high standards of hygiene and food safety."
-    ],
-    requirements: [
-      "Minimum 5 years of experience in South Indian cuisine.",
-      "Ability to handle high-volume cooking.",
-      "Strong leadership and time management skills."
-    ],
-    benefits: ["Accommodation Provided", "Duty Meals", "Health Insurance"],
-    image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
+  id: 1,
+  title: "Commis Chef",
+  category: "Chef",
+  company: "Damoder Immigration Services",
+  location: "Abroad",
+  salary: "₹1,50,000 / Month",
+  experience: "1–2 Years",
+  openings: 50,
+  employmentType: "Full-Time",
+  urgent: false,
+  description: "Looking for Commis Chefs to handle various sections in the kitchen and support daily kitchen operations.",
+  responsibilities: [
+    "Handle various sections in the kitchen.",
+    "Assist with food preparation and daily kitchen operations.",
+    "Maintain cleanliness, hygiene, and food safety standards.",
+    "Work efficiently with other kitchen staff."
+  ],
+  requirements: [
+    "Minimum 1–2 years of experience as a Commis Chef.",
+    "Basic knowledge of kitchen operations and food preparation.",
+    "Ability to work efficiently in a professional kitchen environment."
+  ],
+  benefits: ["Future Settlement"],
+  image: damImage
+},
   {
     id: 2,
     title: "Assistant Chef",
