@@ -28,28 +28,31 @@ export const jobs = [
   image: damImage
 },
   {
-    id: 2,
-    title: "Assistant Chef",
-    category: "Chef",
-    location: "Navi Mumbai",
-    salary: "₹35,000 / Month",
-    experience: "2+ Years",
-    openings: 2,
-    employmentType: "Full-Time",
-    urgent: false,
-    description: "Join our professional kitchen team and contribute to high-quality food preparation and kitchen operations.",
-    responsibilities: [
-      "Assist the Head Chef in daily food preparation.",
-      "Ensure all stations remain stocked before and during service.",
-      "Comply with nutrition and sanitation regulations and safety standards."
-    ],
-    requirements: [
-      "Proven experience in a commercial kitchen.",
-      "Understanding of various cooking methods and procedures.",
-      "Culinary school diploma is a plus."
-    ],
-    benefits: ["Duty Meals", "Paid Time Off", "Career Growth"],
-    image: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  id: 2,
+  title: "Barista",
+  category: "Cafe's",
+  company: "Rooftop cafe",
+  location: "Sindhi Colony",
+  salary: "₹20,000 / Month",
+  experience: "Fresher",
+  openings: 2,
+  employmentType: "Full-Time",
+  urgent: true,
+  description: "Join our cafe team as a Barista and help prepare quality beverages while providing excellent customer service.",
+  responsibilities: [
+  "Prepare coffee, tea, and other beverages according to cafe standards.",
+  "Maintain cleanliness and hygiene of the counter and work area.",
+  "Assist customers and provide friendly, efficient service.",
+  "Ensure ingredients, cups, and other supplies are properly stocked."
+  ],
+  requirements: [
+  "Fresher candidates are welcome to apply.",
+  "Good communication and customer service skills.",
+  "Basic understanding of beverage preparation.",
+  "Ability to work in a fast-paced cafe environment."
+  ],
+  benefits: ["Stay & Food"],
+  image: "https://images.unsplash.com/photo-1619860703338-9c70a1af6a63?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFyaXN0YXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     id: 3,

@@ -69,6 +69,7 @@ const JobSearch = ({ filters, setFilters }) => {
             <option value="Bakery & Pastry">Bakery & Pastry</option>
             <option value="Specialty Chef">Specialty Chef</option>
             <option value="Sous Chef ">Sous Chef </option>
+            <option value="Barista ">Barista </option>
             
           </select>
         </div>
