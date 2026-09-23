@@ -18,7 +18,7 @@ const ChefProtectionPage = () => {
       date: "September 02, 2026",
       category: "Legal Rights",
       snippet: "Are your wages being delayed? Discover the legal steps you can take under Indian Labour Laws and how the government's SAMADHAN portal can help you recover unpaid dues.",
-      image: "https://images.unsplash.com/photo-1505664177922-9818817124f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://plus.unsplash.com/premium_photo-1771899703440-8614fb7dec95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aWxnYWwlMjByaWdodHN8ZW58MHx8MHx8fDA%3D",
       link: "#"
     },
     {
@@ -27,7 +27,7 @@ const ChefProtectionPage = () => {
       date: "August 28, 2026",
       category: "Best Practices",
       snippet: "Never rely on verbal promises. Learn exactly which documents, WhatsApp messages, and bank records you need to keep safe to protect yourself in case of a future dispute.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1706517212972-18a1e840989d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGVtcGxveWUlMjByaWdodHN8ZW58MHx8MHx8fDA%3D",
       link: "#"
     }
   ];
