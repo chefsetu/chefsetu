@@ -1,6 +1,6 @@
 // Replace these with your actual Google Form URLs
 export const GOOGLE_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8";
-export const EMPLOYER_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8"; // Business Registration Form
+export const EMPLOYER_FORM_URL = "https://forms.gle/esgU75CQejMThSVa9"; // Business Registration Form
 export const COMPLAINT_FORM_URL = "https://forms.gle/U9tDvRoFnQ1vz6jH7"; // Chef Protect / Complaint Form
 
 // 1. Direct Job Seeker Link
