@@ -79,6 +79,49 @@ export const jobs = [
     image: "https://media.istockphoto.com/id/164850553/photo/chefs-cooking-in-restaurant-kitchen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Mctv8-le5hW_XZqeWROVSrEtPNN5QM2MRGeN8oo1_kA="
   },
   {
+  id: 4,
+  title: "Culinary Butchery - Commis / DCDP / CDP",
+  category: "Culinary",
+  location: "Goa",
+  salary: "Not Disclosed",
+  experience: "Relevant Hospitality Experience",
+  openings: 3,
+  hierarchy: ["Commis", "DCDP", "CDP"],
+  employmentType: "Full-Time",
+  urgent: true,
+
+  description:
+    "Gateway by Taj Hotels Goa is looking for passionate, people-focused professionals to join the Culinary Butchery section. If you are passionate about hospitality, committed to creating exceptional guest and associate experiences, and excited to grow with a dynamic team, we would love to hear from you.",
+
+  responsibilities: [
+    "Prepare and handle meat and poultry products according to hotel standards.",
+    "Maintain high standards of food quality, hygiene and safety.",
+    "Support daily culinary and butchery operations.",
+    "Ensure proper storage, handling and portioning of ingredients.",
+    "Coordinate with chefs and the culinary team.",
+    "Maintain cleanliness and organization of the work area."
+  ],
+
+  requirements: [
+    "Passion for hospitality and culinary operations.",
+    "Relevant hotel or professional kitchen experience.",
+    "Culinary Butchery experience is preferred.",
+    "Positions available at Commis, DCDP and CDP levels.",
+    "Good knowledge of food safety and hygiene.",
+    "Ability to work in a fast-paced environment.",
+    "Willingness to learn and grow."
+  ],
+
+  benefits: [
+    "Career growth opportunities",
+    "Professional hospitality environment",
+    "Exposure to premium hotel operations",
+    "Learning and development opportunities"
+  ],
+  image: "https://plus.unsplash.com/premium_photo-1682147938431-36851b972b08?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Q3VsaW5hcnklMjBCdXRjaGVyeSUyMC0lMjBDb21taXN8ZW58MHx8MHx8fDA%3D"
+  
+},
+  {
     id: 4,
     title: "Continental Cook",
     category: "Chef",
