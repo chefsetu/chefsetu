@@ -232,5 +232,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+//social media icons are from heroicons.com and are free to use under the MIT license.
 export default Footer;
