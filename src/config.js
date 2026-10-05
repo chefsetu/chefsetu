@@ -1,7 +1,8 @@
 // Replace these with your actual Google Form URLs
 export const GOOGLE_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8";
-export const EMPLOYER_FORM_URL = "https://forms.gle/esgU75CQejMThSVa9"; // Business Registration Form
-export const COMPLAINT_FORM_URL = "https://forms.gle/U9tDvRoFnQ1vz6jH7"; // Chef Protect / Complaint Form
+export const EMPLOYER_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8"; 
+export const COMPLAINT_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8"; 
+export const EVENT_FORM_URL = "https://forms.gle/svKgJoPaAwTy9Cqt7"; // <-- Add your Event Registration form link here
 
 // 1. Direct Job Seeker Link
 export const openApplicationForm = () => {
@@ -21,4 +22,9 @@ export const openApplyModal = () => {
 // 4. Chef Protect / Complaint Link
 export const openComplaintForm = () => {
   window.open(COMPLAINT_FORM_URL, "_blank");
+};
+
+// 5. Event Registration Link
+export const openEventForm = () => {
+  window.open(EVENT_FORM_URL, "_blank");
 };
