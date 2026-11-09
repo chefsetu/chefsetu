@@ -1,6 +1,6 @@
 // Replace these with your actual Google Form URLs
 export const GOOGLE_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8";
-export const EMPLOYER_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8"; 
+export const EMPLOYER_FORM_URL = "https://forms.gle/kUJzJCj4VFv6Qcb49"; 
 export const COMPLAINT_FORM_URL = "https://forms.gle/gez6Kmzi6WSHSmBU8"; 
 export const EVENT_FORM_URL = "https://forms.gle/svKgJoPaAwTy9Cqt7"; // <-- Add your Event Registration form link here
 
