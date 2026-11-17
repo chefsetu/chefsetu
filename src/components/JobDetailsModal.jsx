@@ -1,5 +1,15 @@
 import { useEffect } from 'react';
-import { FiX, FiMapPin, FiBriefcase, FiUsers, FiClock, FiCheckCircle } from 'react-icons/fi';
+import { 
+  FiX, 
+  FiMapPin, 
+  FiBriefcase, 
+  FiUsers, 
+  FiClock, 
+  FiCheckCircle, 
+  FiUser, 
+  FiPhoneCall, 
+  FiMail 
+} from 'react-icons/fi';
 import { openApplicationForm } from '../config';
 
 const JobDetailsModal = ({ job, onClose }) => {
@@ -15,20 +25,20 @@ const JobDetailsModal = ({ job, onClose }) => {
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex justify-center items-center p-4 transition-opacity" onClick={onClose}>
       <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-fadeIn" onClick={(e) => e.stopPropagation()}>
         
-        <button className="absolute top-4 right-4 p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors" onClick={onClose}>
+        {/* Close Button */}
+        <button className="absolute top-4 right-4 p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors z-10" onClick={onClose}>
           <FiX size={24} />
         </button>
         
-        {/* Header */}
+        {/* Header Section */}
         <div className="p-6 md:p-8 border-b border-slate-100">
           {job.urgent && <span className="inline-block bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Urgent Hiring</span>}
           <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-1">
-              {job.title}
-            </h2>
-
-            <p className="text-sm font-semibold text-orange-600 mb-4">
-              {job.company}
-            </p>
+            {job.title}
+          </h2>
+          <p className="text-sm font-semibold text-orange-600 mb-4">
+            {job.company}
+          </p>
           
           <div className="flex flex-wrap gap-3 text-sm text-slate-600 mb-6">
             <span className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-full"><FiMapPin className="text-orange-500" /> {job.location}</span>
@@ -39,14 +49,17 @@ const JobDetailsModal = ({ job, onClose }) => {
           <div className="text-2xl font-black text-slate-900">{job.salary}</div>
         </div>
 
-        {/* Body */}
+        {/* Body Section */}
         <div className="p-6 md:p-8 space-y-8 bg-slate-50">
+          
+          {/* Description */}
           <div>
             <h4 className="text-lg font-bold text-slate-900 mb-3">Job Description</h4>
             <p className="text-slate-600 leading-relaxed">{job.description}</p>
           </div>
 
-          {job.responsibilities && (
+          {/* Responsibilities */}
+          {job.responsibilities && job.responsibilities.length > 0 && (
             <div>
               <h4 className="text-lg font-bold text-slate-900 mb-4">Responsibilities</h4>
               <ul className="space-y-3">
@@ -60,7 +73,8 @@ const JobDetailsModal = ({ job, onClose }) => {
             </div>
           )}
 
-          {job.requirements && (
+          {/* Requirements */}
+          {job.requirements && job.requirements.length > 0 && (
             <div>
               <h4 className="text-lg font-bold text-slate-900 mb-4">Requirements</h4>
               <ul className="space-y-3">
@@ -73,14 +87,80 @@ const JobDetailsModal = ({ job, onClose }) => {
               </ul>
             </div>
           )}
+
+          {/* Contact Information Box (NEW) */}
+          {job.contact && (
+            <div>
+              <h4 className="text-lg font-bold text-slate-900 mb-4">Contact Information</h4>
+              <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm grid grid-cols-1 sm:grid-cols-2 gap-5">
+                
+                {job.contact.name && (
+                  <div className="flex items-center gap-3 text-slate-700">
+                    <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
+                      <FiUser className="text-orange-500 w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Contact Person</p>
+                      <span className="font-semibold">{job.contact.name}</span>
+                    </div>
+                  </div>
+                )}
+                
+                {job.contact.phone && (
+                  <div className="flex items-center gap-3 text-slate-700">
+                    <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
+                      <FiPhoneCall className="text-orange-500 w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Phone / WhatsApp</p>
+                      <a href={`tel:${job.contact.phone}`} className="font-semibold hover:text-orange-600 transition-colors">
+                        {job.contact.phone}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {job.contact.email && (
+                  <div className="flex items-center gap-3 text-slate-700">
+                    <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
+                      <FiMail className="text-orange-500 w-5 h-5" />
+                    </div>
+                    <div className="overflow-hidden">
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Email</p>
+                      <a href={`mailto:${job.contact.email}`} className="font-semibold hover:text-orange-600 transition-colors truncate block">
+                        {job.contact.email}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {job.contact.companyLocation && (
+                  <div className="flex items-center gap-3 text-slate-700">
+                    <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
+                      <FiMapPin className="text-orange-500 w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Base Location</p>
+                      <span className="font-semibold">{job.contact.companyLocation}</span>
+                    </div>
+                  </div>
+                )}
+                
+              </div>
+            </div>
+          )}
+
         </div>
 
         {/* Footer */}
-        <div className="p-6 md:p-8 border-t border-slate-100 bg-white flex justify-end gap-3 rounded-b-2xl sticky bottom-0">
-          <button onClick={onClose} className="px-6 py-3 border-2 border-slate-200 text-slate-600 rounded-lg font-bold hover:bg-slate-50 transition-colors">Close</button>
-          <button onClick={openApplicationForm} className="px-8 py-3 bg-orange-500 text-white rounded-lg font-bold hover:bg-orange-600 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">Apply Now</button>
+        <div className="p-6 md:p-8 border-t border-slate-100 bg-white flex justify-end gap-3 rounded-b-2xl sticky bottom-0 z-10">
+          <button onClick={onClose} className="px-6 py-3 border-2 border-slate-200 text-slate-600 rounded-lg font-bold hover:bg-slate-50 transition-colors">
+            Close
+          </button>
+          <button onClick={openApplicationForm} className="px-8 py-3 bg-orange-500 text-white rounded-lg font-bold hover:bg-orange-600 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            Apply Now
+          </button>
         </div>
-
       </div>
     </div>
   );
