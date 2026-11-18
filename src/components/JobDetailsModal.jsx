@@ -58,6 +58,33 @@ const JobDetailsModal = ({ job, onClose }) => {
             <p className="text-slate-600 leading-relaxed">{job.description}</p>
           </div>
 
+            {/* Available Job Roles */}
+            {job.jobRoles && job.jobRoles.length > 0 && (
+              <div>
+                <h4 className="text-lg font-bold text-slate-900 mb-4">
+                  Available Job Positions ({job.jobRoles.length})
+                </h4>
+
+                <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {job.jobRoles.map((role, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-center gap-3 p-3 rounded-xl bg-orange-50 border border-orange-100"
+                      >
+                        <FiCheckCircle className="text-orange-500 shrink-0 w-5 h-5" />
+
+                        <span className="text-sm font-semibold text-slate-700">
+                          {role}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+
+
           {/* Responsibilities */}
           {job.responsibilities && job.responsibilities.length > 0 && (
             <div>

@@ -219,6 +219,12 @@ export const jobs = [
       "Strong skills in Pan Asian or Tandoor cuisine.",
       "Immediate joiners preferred."
     ],
+    jobRoles: [
+      "1. Pan Asian Sous Chef",
+      "2. Pan Asian CDP",
+      "3. Tandoor CDP",
+      "4. Tandoor C-1"
+    ],
     benefits: [],
     contact: {
       name: "Chef John Daniel",
@@ -313,6 +319,11 @@ export const jobs = [
       "Must be ready for immediate joining.",
       "Only serious candidates should apply."
     ],
+    jobRoles: [
+      "* North Indian Department- Commi-I/II",
+      "* Chinese Commi-I/II",
+      "* Pantry and Continental Commi-I/II"
+    ],
     benefits: [],
     contact: {
       name: "HR / Chef",
@@ -343,6 +354,12 @@ export const jobs = [
       "Relevant experience in the applied role and cuisine.",
       "Immediate joiners preferred."
     ],
+    jobRoles: [
+      "Indian Commis – 1 Position",
+      "South Indian DCDP – 1 Position",
+      "Continental Commis –1 Postion. ",
+      "Continental Commis – 2 Postion."
+    ],
     benefits: [],
     contact: {
       name: "HR / Management",
@@ -351,5 +368,109 @@ export const jobs = [
       companyLocation: "Gachibowli, Hyderabad"
     },
     image: "https://images.unsplash.com/photo-1661505300192-f2eef03a3876?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-  }
+  },
+  {
+    id: 12,
+    title: "Stewarding Supervisor",
+    category: "Hotel Management",
+    company: "IBIS Hotel",
+    location: "Hyderabad",
+    salary: "Not Disclosed",
+    experience: "5–6 Years",
+    openings: 1,
+    employmentType: "Full-Time",
+    urgent: true,
+    description: "IBIS Hotel is urgently hiring a Stewarding Supervisor with 5–6 years of industrial experience. The ideal candidate should have strong leadership, team-handling, and supervisory skills.",
+    responsibilities: [
+      "Supervise and manage the stewarding team.",
+      "Ensure smooth daily stewarding operations.",
+      "Maintain cleanliness, hygiene, and kitchen sanitation standards.",
+      "Coordinate with kitchen and other hotel departments.",
+      "Manage and guide team members effectively."
+    ],
+    requirements: [
+      "5–6 years of industrial experience.",
+      "Good team-handling skills.",
+      "Minimum qualification: 10+2.",
+      "Strong leadership and supervisory skills."
+    ],
+    benefits: [],
+    contact: {
+      name: "HR / Management",
+      email: "",
+      phone: "9963795185",
+      companyLocation: "IBIS Hotel, Hyderabad"
+    },
+    image: "https://images.unsplash.com/photo-1572715376701-98568319fd0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+},
+{
+    id: 13,
+    title: "Multiple Hospitality Positions – TOIT Hyderabad",
+    category: "Hotel Management",
+    company: "PH4 Food and Beverages Pvt. Ltd. (TOIT)",
+    location: "Hyderabad",
+    salary: "As per industry standards and experience",
+    experience: "Freshers & Experienced",
+    openings: 20,
+    employmentType: "Full-Time",
+    urgent: true,
+    description: "PH4 Food and Beverages Pvt. Ltd. is excited to announce the upcoming launch of TOIT Hyderabad and is inviting enthusiastic and talented candidates to join its hospitality team. Multiple opportunities are available across Food & Beverage, Guest Relations, Kitchen, Housekeeping, Bar Operations, and Purchase departments.",
+    responsibilities: [
+      "Perform duties according to the assigned department and job role.",
+      "Maintain high standards of customer service and guest satisfaction.",
+      "Ensure cleanliness, hygiene, and operational standards.",
+      "Coordinate with team members and department supervisors.",
+      "Support smooth daily restaurant and hospitality operations.",
+      "Follow company policies and operational procedures."
+    ],
+    requirements: [
+      "Positions available for freshers and experienced candidates, depending on the role.",
+      "Good communication and interpersonal skills.",
+      "Strong teamwork and customer service abilities.",
+      "Relevant hospitality experience preferred for supervisory and managerial positions.",
+      "Willingness to work in a dynamic hospitality environment."
+    ],
+    benefits: [
+      "Great work environment",
+      "Health coverage",
+      "Training and development",
+      "Growth opportunities",
+      "Company benefits"
+    ],
+    jobRoles: [
+      "Junior Bartender",
+      "Bartender",
+      "Service Support",
+      "GRE Steward",
+      "GRE Host",
+      "GRE Hostess",
+      "Junior Host",
+      "Junior Steward",
+      "Housekeeping",
+      "Housekeeping Supervisor",
+      "Service Supervisor",
+      "Assistant Restaurant Manager",
+      "Bar Lead",
+      "DCDP",
+      "CDP",
+      "Commi 1",
+      "Commi 2",
+      "Commi 3",
+      "Purchase Executive",
+      "Purchase Assistant"
+    ],
+    interviewDetails: {
+      interviewType: "Walk-in Interview",
+      dates: "23rd, 24th, 25th & 26th November",
+      location: "Contact recruitment team for interview venue",
+      timings: "Not Disclosed"
+    },
+    contact: {
+      name: "Recruitment Team",
+      email: "",
+      phone: "08884244533",
+      companyLocation: "TOIT Hyderabad"
+    },
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60"
+}
 ];
