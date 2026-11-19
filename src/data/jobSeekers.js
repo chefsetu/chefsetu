@@ -11,6 +11,7 @@ export const jobSeekers = [
     expectedSalary: "₹35,000 / month",
     phone: "6305148004",
     email: "potharamranjith@gmail.com",
+    resume: "https://drive.google.com/open?id=1qt1oNFJ-gk6DcOIWT_YzvR05wdUWm3k2",
   },
   {
     id: 4,
@@ -24,6 +25,7 @@ export const jobSeekers = [
     expectedSalary: "₹19,000 / month",
     phone: "8374735271",
     email: "irlakrishnamurthy@gmail.com",
+    resume: "https://drive.google.com/open?id=1TeLZf578BP4siscP0VPrYOJRxyj6n00O",
   },
   {
     id: 5,
@@ -37,6 +39,7 @@ export const jobSeekers = [
     expectedSalary: "₹75,000 / month",
     phone: "9666459815",
     email: "bkr080888@gmail.com",
+    resume: "",
   },
   {
     id: 6,
@@ -50,6 +53,7 @@ export const jobSeekers = [
     expectedSalary: "₹1,00,000 / month",
     phone: "8686740363",
     email: "gouripathi.g@gmail.com",
+    resume: "https://drive.google.com/open?id=1RgpxBkRxHuf7eR0xugaRmyyTbsRUn922",
   },
   {
     id: 7,
@@ -63,6 +67,8 @@ export const jobSeekers = [
     expectedSalary: "₹1,20,000+ / month",
     phone: "9182931456",
     email: "chefseshu36@gmail.com",
+    // Latest Corporate Chef submission link (earlier Sr. Exec Chef link: https://drive.google.com/open?id=1SnnelaO7ByWxCXhw7_ZtJ2Lo0g3a7pK6)
+    resume: "https://drive.google.com/open?id=1mL7OHXun-Sh3Het4OaCnC0cXWonjr_xl",
   },
   {
     id: 8,
@@ -76,6 +82,7 @@ export const jobSeekers = [
     expectedSalary: "₹50,000+ / month",
     phone: "7093173736",
     email: "anish7093173736@gmail.com",
+    resume: "https://drive.google.com/open?id=16k4wO_0bdIKFOuJsxfe4dFbJoASUp1lL",
   },
   {
     id: 9,
@@ -89,5 +96,6 @@ export const jobSeekers = [
     expectedSalary: "₹90,000+ / month",
     phone: "7908922668",
     email: "kishore.pats@gmail.com",
+    resume: "https://drive.google.com/open?id=1TQPBHsOa7GXIrXidWBoSeo3jZqj9-ytp",
   },
 ];

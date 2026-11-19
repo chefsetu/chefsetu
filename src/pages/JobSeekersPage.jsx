@@ -84,8 +84,8 @@ const JobSeekersPage = () => {
             Verified Job Seekers
           </h1>
           <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Discover experienced chefs and hospitality professionals. Reach out
-            directly via Call, WhatsApp, or Email—no agencies or middlemen.
+            Discover experienced chefs and hospitality professionals. View their
+            resumes and contact them directly via Call or WhatsApp—no middlemen.
           </p>
         </motion.div>
 
@@ -153,7 +153,7 @@ const JobSeekersPage = () => {
           </p>
         </div>
 
-        {/* Candidate Cards Grid (2 columns on lg for bigger, more readable cards) */}
+        {/* Candidate Cards Grid */}
         {filteredCandidates.length === 0 ? (
           <motion.div
             initial={{ opacity: 0 }}
@@ -169,7 +169,7 @@ const JobSeekersPage = () => {
                 setExperienceFilter("All");
                 setStatusFilter("All");
               }}
-              className="mt-4 px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold rounded-xl transition-colors"
+              className="mt-4 px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold rounded-xl transition-colors cursor-pointer"
             >
               Reset Filters
             </button>
@@ -220,7 +220,6 @@ const JobSeekersPage = () => {
                               </div>
                             )}
                           </div>
-                          {/* Status Indicator Dot on DP */}
                           <span
                             title={candidate.workingStatus}
                             className={`absolute bottom-1 right-1 w-4 h-4 rounded-full border-2 border-white shadow-sm ${
@@ -230,11 +229,9 @@ const JobSeekersPage = () => {
                         </div>
 
                         <div className="min-w-0 flex-1">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <h2 className="text-xl font-bold text-gray-900 truncate">
-                              {candidate.name}
-                            </h2>
-                          </div>
+                          <h2 className="text-xl font-bold text-gray-900 truncate">
+                            {candidate.name}
+                          </h2>
                           <p className="text-base font-semibold text-orange-600 mt-0.5">
                             {candidate.jobTitle}
                           </p>
@@ -303,7 +300,7 @@ const JobSeekersPage = () => {
                       </div>
                     </div>
 
-                    {/* Direct Business Contact Actions */}
+                    {/* Direct Business Contact & Resume Actions */}
                     <div className="mt-6 pt-5 border-t border-gray-100 grid grid-cols-3 gap-3">
                       <motion.a
                         whileTap={{ scale: 0.96 }}
@@ -329,18 +326,28 @@ const JobSeekersPage = () => {
                         WhatsApp
                       </motion.a>
 
-                      <motion.a
-                        whileTap={{ scale: 0.96 }}
-                        href={`mailto:${candidate.email}?subject=${encodeURIComponent(
-                          `Job Opportunity for ${candidate.jobTitle}`
-                        )}`}
-                        className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-900 hover:bg-gray-800 text-white text-sm font-semibold shadow-sm transition-colors"
-                      >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        Email
-                      </motion.a>
+                      {candidate.resume ? (
+                        <motion.a
+                          whileTap={{ scale: 0.96 }}
+                          href={candidate.resume}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-900 hover:bg-gray-800 text-white text-sm font-semibold shadow-sm transition-colors"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                          Resume
+                        </motion.a>
+                      ) : (
+                        <button
+                          type="button"
+                          disabled
+                          className="flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-gray-100 text-gray-400 text-xs font-semibold cursor-not-allowed border border-gray-200"
+                        >
+                          No Resume
+                        </button>
+                      )}
                     </div>
                   </motion.div>
                 );

@@ -96,36 +96,48 @@ export const jobs = [
     },
     image: "https://media.istockphoto.com/id/164850553/photo/chefs-cooking-in-restaurant-kitchen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Mctv8-le5hW_XZqeWROVSrEtPNN5QM2MRGeN8oo1_kA="
   },
-  {
-    id: 4,
-    title: "Continental Cook",
-    category: "Chef",
-    location: "Mumbai",
-    salary: "₹30,000 - ₹40,000 / Month",
-    experience: "2+ Years",
-    openings: 1,
-    employmentType: "Full-Time",
-    urgent: false,
-    description: "Specialized cook needed for Continental cuisine in a premium dining setup.",
-    responsibilities: [
-      "Prepare Continental dishes as per standard recipes.",
-      "Ensure beautiful plating and presentation.",
-      "Manage portion control."
-    ],
-    requirements: [
-      "Specialization in Continental cuisine.",
-      "Attention to detail.",
-      "Good communication skills."
-    ],
-    benefits: ["Duty Meals", "Service Charge Share"],
-    contact: {
-      name: "",
-      email: "",
-      phone: "",
-      companyLocation: "Hyderabad"
-    },
-    image: "https://plus.unsplash.com/premium_photo-1687697861242-03e99059e833?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+{
+  id: 4,
+  title: "F&B Service & Production Staff",
+  category: "Chef",
+  company: "SVN Group of Hotels",
+  location: "Hyderabad",
+  salary: "Not Disclosed",
+  experience: "Experienced",
+  openings: 7,
+  employmentType: "Full-Time",
+  urgent: true,
+  description: "Immediate hiring for SVN Group of Hotels for F&B Service and F&B Production positions. Candidates with relevant hotel industry experience are preferred.",
+  responsibilities: [
+    "Handle daily F&B service operations.",
+    "Provide excellent guest service and maintain hospitality standards.",
+    "Prepare food according to assigned cuisine and kitchen standards.",
+    "Maintain hygiene, cleanliness, and food safety standards.",
+    "Support senior chefs and team members in daily operations."
+  ],
+  requirements: [
+    "Relevant experience in the applied role.",
+    "Good communication and teamwork skills.",
+    "Immediate joiners preferred."
+  ],
+  jobRoles: [
+    "F&B Service – Captain",
+    "F&B Service – Steward",
+    "F&B Service – Hostess",
+    "F&B Production – South Indian Commis",
+    "F&B Production – Indian Commis",
+    "F&B Production – Tandoor Commis",
+    "F&B Production – Chinese Commis"
+  ],
+  benefits: [],
+  contact: {
+    name: "Chef Mukherjee / HR Narayan",
+    email: "",
+    phone: "7330743896 / 8899302771",
+    companyLocation: "Hyderabad"
   },
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjzSNbsjky0CS0Toux7JS3jyuRGwHVtLj98CgnSwquQ&s=10"
+},
   {
     id: 5,
     title: "Indian Chef - Commis 3",
