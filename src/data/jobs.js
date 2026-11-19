@@ -64,7 +64,7 @@ export const jobs = [
       phone: "9032797797",
       companyLocation: "Sindhi Colony, Hyderabad"
     },
-    image: "https://images.unsplash.com/photo-1507915135761-41a0a222c709?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxQOpgo5P2ZqeLQz_ps6kl5zWocGyQExK7JsE51BKqw&s=10"
   },
   {
     id: 3,
@@ -232,7 +232,7 @@ export const jobs = [
       phone: "8374759517",
       companyLocation: "Hyderabad"
     },
-    image: "https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBG0lgJWOcylpTaa8DBFHJyZ0CMC9jxIvmjBA7Wng6Q&s=10"
   },
   {
     id: 8,
@@ -295,7 +295,7 @@ export const jobs = [
       phone: "9701343004",
       companyLocation: "Tirupati"
     },
-    image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0fyn3y9Keirjznl3ps8KGRU5HnURClrGK-78_7ux1Cg&s=10"
   },
   {
     id: 10,
@@ -331,7 +331,7 @@ export const jobs = [
       phone: "9700620660 / 9100033916",
       companyLocation: "Gachibowli, Hyderabad"
     },
-    image: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKacD3KRyWaauYJ1u_RT3G9SH1F-9A0JLsw-eoT60eRw&s=10"
   },
   {
     id: 11,
@@ -401,7 +401,7 @@ export const jobs = [
       phone: "9963795185",
       companyLocation: "IBIS Hotel, Hyderabad"
     },
-    image: "https://images.unsplash.com/photo-1572715376701-98568319fd0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQiiWxLYvajSMTFHgnIr-zqJ0lHg1n-S09Ukdk8mH8A&s=10"
 },
 {
     id: 13,
@@ -471,6 +471,6 @@ export const jobs = [
       phone: "08884244533",
       companyLocation: "TOIT Hyderabad"
     },
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDAOu9lPsjIKrh2zBPtc7jqyJkO5tcAiIrycrwlqnHg&s=10"
 }
 ];

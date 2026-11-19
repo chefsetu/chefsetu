@@ -1,5 +1,7 @@
+
 import { Link } from 'react-router-dom';
 import { openApplicationForm, openEmployerForm } from '../config';
+import logo from '../assets/logo1.png';
 
 const Footer = () => {
   return (
@@ -10,9 +12,24 @@ const Footer = () => {
 
           {/* Brand */}
           <div className="lg:pr-8">
-            <h2 className="text-3xl font-black text-white tracking-tight mb-4">
-              Chef<span className="text-orange-500">Setu</span>
-            </h2>
+
+            <Link to="/" className="inline-flex items-center gap-3 mb-5">
+
+              {/* Logo with white background */}
+              <div className="bg-white rounded-xl p-1 shadow-sm flex items-center justify-center">
+                <img
+                  src={logo}
+                  alt="ChefSetu Logo"
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+
+              {/* Brand Name */}
+              <h2 className="text-3xl font-black text-white tracking-tight">
+                Chef<span className="text-orange-500">Setu</span>
+              </h2>
+
+            </Link>
 
             <p className="text-slate-300 italic mb-4 font-medium">
               "Connecting Talent with Opportunity"
@@ -22,6 +39,7 @@ const Footer = () => {
               Your Career. Your Opportunity. Your Next Step. We bridge the gap
               between premium hospitality brands and top-tier professionals.
             </p>
+
           </div>
 
           {/* Quick Links */}
@@ -32,37 +50,25 @@ const Footer = () => {
 
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/"
-                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
-                >
+                <Link to="/" className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300">
                   Home
                 </Link>
               </li>
 
               <li>
-                <Link
-                  to="/jobs"
-                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
-                >
+                <Link to="/jobs" className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300">
                   Find Jobs
                 </Link>
               </li>
 
               <li>
-                <Link
-                  to="/careers"
-                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
-                >
+                <Link to="/careers" className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300">
                   Career Paths
                 </Link>
               </li>
 
               <li>
-                <Link
-                  to="/about"
-                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
-                >
+                <Link to="/about" className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300">
                   About Us
                 </Link>
               </li>
@@ -82,6 +88,24 @@ const Footer = () => {
                   className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
                 >
                   Browse Jobs
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/job-seekers"
+                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
+                >
+                  Job Seekers
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/interview-prep"
+                  className="inline-block hover:text-white hover:translate-x-1 transition-all duration-300"
+                >
+                  Interview Prep
                 </Link>
               </li>
 
@@ -177,14 +201,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                 >
-                  <rect
-                    x="3"
-                    y="3"
-                    width="18"
-                    height="18"
-                    rx="5"
-                    ry="5"
-                  />
+                  <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
                   <circle cx="12" cy="12" r="4" />
                   <circle
                     cx="17.5"
@@ -232,5 +249,5 @@ const Footer = () => {
     </footer>
   );
 };
-//social media icons are from heroicons.com and are free to use under the MIT license.
+
 export default Footer;
