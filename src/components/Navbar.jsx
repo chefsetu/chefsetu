@@ -90,6 +90,7 @@ const Navbar = () => {
                 </Link>
 
               </div>
+              
 
             </div>
 
@@ -130,6 +131,14 @@ const Navbar = () => {
             </Link>
 
           </div>
+
+          <Link to="/job-seekers" className="hover:text-orange-600 transition-colors">
+            Job Seekers
+          </Link>
+
+          <Link to="/interview-prep" className="hover:text-orange-600 transition-colors">
+            Interview Prep
+          </Link>
 
           {/* =====================================================
               DESKTOP APPLY BUTTON

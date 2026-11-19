@@ -7,6 +7,8 @@ import ApplyModal from './components/ApplyModal.jsx';
 import Home from './pages/Home.jsx';
 import JobsPage from './pages/JobsPage.jsx';
 import CareersPage from './pages/CareersPage.jsx';
+import JobSeekersPage from "./pages/JobSeekersPage";
+import InterviewPrepPage from "./pages/InterviewPrepPage";
 import EmployersPage from './pages/EmployersPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import InternshipsPage from './pages/InternshipsPage.jsx';
@@ -41,11 +43,17 @@ function App() {
             {/* About */}
             <Route path="/about" element={<AboutPage />} />
 
+            <Route path="/job-seekers" element={<JobSeekersPage />} />
+
+            <Route path="/interview-prep" element={<InterviewPrepPage />} />
+
             {/* Chef Protection */}
             <Route path="/protection" element={<ChefProtectionPage />} />
 
             {/* Events */}
             <Route path="/events" element={<EventsPage />} />
+
+          
 
           </Routes>
         </main>
