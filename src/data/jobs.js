@@ -138,77 +138,100 @@ export const jobs = [
   },
   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjzSNbsjky0CS0Toux7JS3jyuRGwHVtLj98CgnSwquQ&s=10"
 },
-  {
-    id: 5,
-    title: "Indian Chef - Commis 3",
-    category: "Culinary",
-    location: "Hyderabad",
-    salary: "₹18,000 per month",
-    experience: "Fresher",
-    openings: 3,
-    hierarchy: ["Commis 3"],
-    employmentType: "Full-Time",
-    urgent: false,
-    description: "A hotel in Hyderabad is looking for a passionate and enthusiastic Indian Chef at Commis 3 level. Freshers with an interest in Indian cuisine and a willingness to learn are welcome to apply.",
-    responsibilities: [
-      "Assist senior chefs in preparing Indian dishes.",
-      "Prepare ingredients, vegetables, gravies and masalas.",
-      "Support daily kitchen operations.",
-      "Maintain food quality and presentation standards.",
-      "Follow food safety and kitchen hygiene practices.",
-      "Maintain cleanliness and organization of the kitchen."
-    ],
-    requirements: [
-      "Position: Indian Chef - Commis 3.",
-      "Experience: Fresher.",
-      "Knowledge or interest in Indian cuisine.",
-      "Willingness to learn and work under senior chefs.",
-      "Basic understanding of kitchen hygiene and food safety.",
-      "Ability to work in a hotel kitchen environment."
-    ],
-    benefits: [
-      "Salary: ₹18,000 per month",
-      "Opportunity to develop culinary skills",
-      "Professional hotel kitchen experience"
-    ],
-    contact: {
-      name: "",
-      email: "",
-      phone: "",
-      companyLocation: "Hyderabad"
-    },
-    image: "https://media.istockphoto.com/id/1305844419/photo/chef-platting-the-freshly-grilled-chicken-tikka.webp?a=1&b=1&s=612x612&w=0&k=20&c=cTJ1daH2EeW2dWb4Sjzgb9k0qzrd16r53dviM46I56A="
+{
+  id: 5,
+  title: "Chef & F&B Service Staff",
+  category: "Chef",
+  company: "The Grand Palate",
+  location: "Whitefield, Bengaluru",
+  salary: "₹13,000 – ₹17,000 (F&B Service; Chef salary not disclosed)",
+  experience: "Not Specified",
+  openings: 86,
+  employmentType: "Full-Time",
+  urgent: true,
+  description: "Immediate hiring at The Grand Palate, a multi-cuisine restaurant in Whitefield, Bengaluru. Hiring for multiple kitchen departments, live counters, bakery and pastry production, and F&B service positions. Candidates can apply for various chef and hospitality roles.",
+  responsibilities: [
+    "Prepare breads, pastries, and bakery products.",
+    "Maintain product quality and consistency.",
+    "Handle baking, cooking, production, and presentation.",
+    "Ensure food safety, hygiene, and stock control.",
+    "Support daily kitchen and F&B service operations."
+  ],
+  requirements: [
+    "Candidates with relevant culinary or hospitality experience preferred.",
+    "Ability to work in the assigned kitchen department or F&B service role.",
+    "Knowledge of food preparation, hygiene, and kitchen operations.",
+    "Immediate joiners preferred."
+  ],
+  jobRoles: [
+    "Continental – Commi-I (1), Commi-II (2), Commi-III (1)",
+    "Garde Manger – DCDP (1), Commi-III (1)",
+    "Pan Asian – CDP (1), DCDP (1), Commi-II (2)",
+    "Tandoor – CDP (1), DCDP (1), Commi-I (2), Commi-II (2), Commi-III (1)",
+    "North Indian – CDP (1), DCDP (1), Commi-I (2), Commi-II (2), Commi-III (1)",
+    "South Indian – DCDP (1), Commi-I (1), Commi-II (1)",
+    "Halwai & Chaat – CDP (1), Commi-I (1), Commi-II (2), Commi-III (2)",
+    "Sushi Live Counter – Commi-I (1), Commi-II (1)",
+    "Dimsum Live Counter – Commi-II (1)",
+    "Teppanyaki Live Counter – Commi-I (1), Commi-II (1)",
+    "Pizza & Pasta Live Counter – Commi-II (2)",
+    "Bakery & Pastry – CDP (1), DCDP (1), Commi-I (2), Commi-II (4), Commi-III (4)",
+    "F&B Service – Captain (4)",
+    "F&B Service – Senior Steward (15)",
+    "F&B Service – Steward (15)"
+  ],
+  benefits: [
+    "Good salary",
+    "Service charges",
+    "Food provided",
+    "Good accommodation provided"
+  ],
+  contact: {
+    name: "The Grand Palate HR / Recruitment Team",
+    email: "",
+    phone: "09059741046",
+    companyLocation: "Whitefield, Bengaluru"
   },
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiWJW8A5x1BU8V5Bb45KhOuKGIfltTkrR0YiRfP6yjTg&s=10"
+},
   {
-    id: 6,
-    title: "Senior Barista",
-    category: "Food & Beverage",
-    location: "Mumbai",
-    salary: "₹20,000 - ₹30,000 / Month",
-    experience: "1+ Year",
-    openings: 1,
-    employmentType: "Full-Time",
-    urgent: true,
-    description: "Passionate Barista needed to craft exceptional coffee beverages and provide excellent customer service.",
-    responsibilities: [
-      "Prepare and serve a variety of coffee drinks.",
-      "Maintain espresso machines and grinders.",
-      "Engage with customers and take orders."
-    ],
-    requirements: [
-      "Previous experience as a Barista.",
-      "Knowledge of latte art is a plus.",
-      "Friendly and professional demeanor."
-    ],
-    benefits: ["Flexible Shifts", "Staff Discounts", "Duty Meals"],
-    contact: {
-      name: "",
-      email: "",
-      phone: "",
-      companyLocation: "Hyderabad"
-    },
-    image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  id: 6,
+  title: "Bakery CDP (Chef de Partie)",
+  category: "Chef",
+  company: "Restaurant",
+  location: "Gachibowli, Hyderabad",
+  salary: "Up to ₹38,000",
+  experience: "Experienced",
+  openings: 1,
+  employmentType: "Full-Time",
+  urgent: true,
+  description: "Urgent hiring for a Bakery Chef de Partie (CDP) at a restaurant in Gachibowli, Hyderabad. Candidates with relevant bakery and pastry experience are preferred.",
+  responsibilities: [
+    "Manage daily bakery production and operations.",
+    "Prepare bakery and pastry products as per restaurant standards.",
+    "Maintain food quality, consistency, and presentation.",
+    "Ensure proper hygiene, cleanliness, and food safety.",
+    "Manage bakery ingredients and stock efficiently."
+  ],
+  requirements: [
+    "Relevant experience in bakery operations.",
+    "Previous experience at CDP level preferred.",
+    "Knowledge of bakery and pastry preparation.",
+    "Ability to maintain quality and hygiene standards.",
+    "Immediate joiners preferred."
+  ],
+  jobRoles: [
+    "Bakery CDP (Chef de Partie)"
+  ],
+  benefits: [],
+  contact: {
+    name: "Restaurant HR",
+    email: "",
+    phone: "9494094087",
+    companyLocation: "Gachibowli, Hyderabad"
   },
+  image: "https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+},
   {
     id: 7,
     title: "Pan Asian Sous Chef & CDPs",
@@ -484,5 +507,47 @@ export const jobs = [
       companyLocation: "TOIT Hyderabad"
     },
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDAOu9lPsjIKrh2zBPtc7jqyJkO5tcAiIrycrwlqnHg&s=10"
-}
+},
+{
+  id: 14,
+  title: "Commis Chef / Kitchen Assistant Chefs",
+  category: "Chef",
+  company: "Alanati Telugu Ruchulu",
+  location: "Rajahmundry, Andhra Pradesh",
+  salary: "Best in the Industry",
+  experience: "3–5 Years",
+  openings: 15,
+  employmentType: "Not Specified",
+  urgent: false,
+  description: "Alanati Telugu Ruchulu is hiring 15 Commis Chefs and Kitchen Assistant Chefs for its restaurant operations in Rajahmundry, Andhra Pradesh. Candidates with 3–5 years of relevant kitchen experience are preferred. Attractive salary offered, best in the industry.",
+  responsibilities: [
+    "Assist in daily kitchen operations.",
+    "Support senior chefs in food preparation.",
+    "Maintain food quality and consistency.",
+    "Follow kitchen hygiene and food safety standards.",
+    "Support smooth kitchen operations and teamwork."
+  ],
+  requirements: [
+    "3–5 years of relevant kitchen experience.",
+    "Experience in restaurant kitchen operations.",
+    "Knowledge of food preparation.",
+    "Ability to work with kitchen teams."
+  ],
+  jobRoles: [
+    "Commis Chef",
+    "Kitchen Assistant Chef"
+  ],
+  benefits: [
+    "Food provided",
+    "Accommodation provided",
+    "Bounce (as specified by employer)"
+  ],
+  contact: {
+    name: "Malakondaiah (Founder & Culinary Head)",
+    email: "malakondaiah07@gmail.com",
+    phone: "9703801625",
+    companyLocation: "Rajahmundry, Andhra Pradesh"
+  },
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6MRA7tX_0xMr4k8-nSthGAB4VRBtedLAe5ouFTfk7A&s=10"
+},
 ];
