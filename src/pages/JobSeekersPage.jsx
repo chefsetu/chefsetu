@@ -11,11 +11,6 @@ const getInitials = (name) => {
     .join("");
 };
 
-const formatWhatsAppNumber = (phone) => {
-  const digits = phone.replace(/\D/g, "").replace(/^0+/, "");
-  return digits.length === 10 ? `91${digits}` : digits;
-};
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -45,6 +40,14 @@ const JobSeekersPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [experienceFilter, setExperienceFilter] = useState("All");
   const [statusFilter, setStatusFilter] = useState("All");
+  const [visiblePhones, setVisiblePhones] = useState({});
+
+  const togglePhoneVisibility = (id) => {
+    setVisiblePhones((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
   const filteredCandidates = useMemo(() => {
     return jobSeekers.filter((candidate) => {
@@ -85,7 +88,7 @@ const JobSeekersPage = () => {
           </h1>
           <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Discover experienced chefs and hospitality professionals. View their
-            resumes and contact them directly via Call or WhatsApp—no middlemen.
+            resumes and contact them directly via Call or Email—no middlemen.
           </p>
         </motion.div>
 
@@ -183,13 +186,16 @@ const JobSeekersPage = () => {
           >
             <AnimatePresence mode="popLayout">
               {filteredCandidates.map((candidate) => {
-                const whatsappUrl = `https://wa.me/${formatWhatsAppNumber(
-                  candidate.phone
-                )}?text=${encodeURIComponent(
-                  `Hello ${candidate.name}, I found your profile on ChefSetu for the ${candidate.jobTitle} role. Are you available to discuss a job opportunity?`
-                )}`;
-
                 const isLooking = candidate.workingStatus === "Looking for Job";
+                const isPhoneVisible = !!visiblePhones[candidate.id];
+
+                const mailtoUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+                      candidate.email
+                    )}&su=${encodeURIComponent(
+                      `Job Opportunity for ${candidate.jobTitle}`
+                    )}&body=${encodeURIComponent(
+                      `Hello ${candidate.name},\n\nI found your profile on ChefSetu for the ${candidate.jobTitle} role. Are you available to discuss a job opportunity?`
+                    )}`;
 
                 return (
                   <motion.div
@@ -281,13 +287,71 @@ const JobSeekersPage = () => {
                           </span>
                         </div>
 
+                        {/* Hidden Mobile Number with Eye Toggle */}
                         <div className="bg-gray-50/80 rounded-2xl p-3.5">
                           <span className="text-xs font-medium text-gray-400 uppercase tracking-wider block">
                             Mobile
                           </span>
-                          <span className="font-semibold text-gray-800 mt-0.5 block">
-                            +91 {candidate.phone}
-                          </span>
+                          <div className="flex items-center justify-between gap-2 mt-0.5">
+                            <span className="font-semibold text-gray-800 tracking-wide truncate">
+                              {isPhoneVisible
+                                ? `+91 ${candidate.phone}`
+                                : "+91 ••••••••••"}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => togglePhoneVisibility(candidate.id)}
+                              aria-label={
+                                isPhoneVisible
+                                  ? "Hide phone number"
+                                  : "Show phone number"
+                              }
+                              title={
+                                isPhoneVisible
+                                  ? "Hide phone number"
+                                  : "Show phone number"
+                              }
+                              className="p-1.5 rounded-lg text-gray-500 hover:text-orange-600 hover:bg-orange-100/70 transition-colors cursor-pointer shrink-0"
+                            >
+                              {isPhoneVisible ? (
+                                /* Eye Off Icon */
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+                                  />
+                                </svg>
+                              ) : (
+                                /* Eye Icon */
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                  />
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                  />
+                                </svg>
+                              )}
+                            </button>
+                          </div>
                         </div>
                       </div>
 
@@ -307,23 +371,41 @@ const JobSeekersPage = () => {
                         href={`tel:+91${candidate.phone}`}
                         className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold shadow-sm transition-colors"
                       >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          />
                         </svg>
                         Call
                       </motion.a>
 
                       <motion.a
                         whileTap={{ scale: 0.96 }}
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold shadow-sm transition-colors"
+                        href={mailtoUrl}
+                        className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold shadow-sm transition-colors"
                       >
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.766.469 3.484 1.344 5l-1.406 5.156 5.281-1.391c1.469.797 3.109 1.219 4.75 1.219 5.516 0 9.969-4.453 9.969-9.969S17.547 2 12.031 2zm5.813 14.125c-.25.703-1.438 1.344-1.984 1.422-.516.078-1.172.109-1.891-.125-.438-.141-1-.328-1.719-.641-3.016-1.313-4.984-4.359-5.141-4.563-.156-.203-1.234-1.641-1.234-3.125 0-1.484.781-2.219 1.063-2.516.281-.297.609-.375.813-.375.203 0 .406 0 .594.016.188.016.438-.078.688.531.25.609.859 2.094.938 2.25.078.156.125.344.031.547-.094.203-.156.344-.313.516-.156.172-.328.391-.469.531-.156.156-.313.328-.141.625.172.297.781 1.297 1.688 2.109 1.156 1.031 2.141 1.359 2.438 1.516.297.156.469.125.641-.078.172-.203.75-.875.953-1.172.203-.297.406-.25.688-.156.281.094 1.781.844 2.094 1 .313.156.516.234.594.359.078.125.078.734-.172 1.438z" />
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
                         </svg>
-                        WhatsApp
+                        Email
                       </motion.a>
 
                       {candidate.resume ? (
@@ -334,8 +416,18 @@ const JobSeekersPage = () => {
                           rel="noopener noreferrer"
                           className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-900 hover:bg-gray-800 text-white text-sm font-semibold shadow-sm transition-colors"
                         >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                            />
                           </svg>
                           Resume
                         </motion.a>
