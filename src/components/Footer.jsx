@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { openApplicationForm, openEmployerForm } from '../config';
 import logo from '../assets/logo1.png';
@@ -226,21 +225,21 @@ const Footer = () => {
             &copy; 2026 ChefSetu. All Rights Reserved.
           </p>
 
-          <div className="mt-4 md:mt-0 space-x-4 text-slate-600">
+          <div className="mt-4 md:mt-0 space-x-4 text-slate-400">
             <Link
-              to="/"
+              to="/privacy-policy"
               className="hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
 
-            <span>|</span>
+            <span className="text-slate-600">|</span>
 
             <Link
-              to="/"
+              to="/terms-and-conditions"
               className="hover:text-white transition-colors"
             >
-              Terms of Service
+              Terms & Conditions
             </Link>
           </div>
 

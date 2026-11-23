@@ -14,6 +14,9 @@ import AboutPage from './pages/AboutPage.jsx';
 import InternshipsPage from './pages/InternshipsPage.jsx';
 import ChefProtectionPage from './pages/ChefProtectionPage.jsx';
 import EventsPage from './pages/EventsPage.jsx';
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsConditionsPage from "./pages/TermsConditionsPage";
+
 
 function App() {
   return (
@@ -53,7 +56,8 @@ function App() {
             {/* Events */}
             <Route path="/events" element={<EventsPage />} />
 
-          
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
 
           </Routes>
         </main>
