@@ -111,4 +111,18 @@ export const jobSeekers = [
     email: "subhanshaik37@yahoo.co.in",
     resume: "https://drive.google.com/open?id=1ETbb_4K0mzJsfbtq3M3gdndTl94Z6u-L",
 },
+{
+  id: 10,
+  name: "Suresh",
+  photo: "",
+  jobTitle: "Senior Chef de Partie",
+  experience: "5+ years",
+  experienceDetails: "Currently looking for a job. Has 5+ years of professional kitchen experience.",
+  workingStatus: "Looking for Job",
+  location: "Andhra Pradesh",
+  expectedSalary: "₹90,000 / month",
+  phone: "9503698766",
+  email: "suresh.scorpions33@gmail.com",
+  resume: "https://drive.google.com/open?id=15w3H2a5cgpOp6Yx_d2gVepGNWzdhZtmO",
+},
 ];
