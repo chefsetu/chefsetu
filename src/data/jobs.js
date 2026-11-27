@@ -589,5 +589,88 @@ export const jobs = [
     companyLocation: "Gandipet, Hyderabad"
   },
   image: "https://images.unsplash.com/photo-1661505300192-f2eef03a3876?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+},{
+  id: 15,
+  title: "Urgent Requirement - Multiple Hotel Positions",
+  category: "Hotel",
+  company: "The Manohar",
+  location: "Begumpet, Hyderabad",
+  salary: "Not Specified",
+  experience: "Hotel experience required",
+  openings: 10,
+  employmentType: "Not Specified",
+  urgent: true,
+  description: "The Manohar, Begumpet, Hyderabad is urgently hiring candidates for multiple kitchen and housekeeping positions. Vacancies are available for Chinese Commis, Pantry Commis, South Indian Commis, Continental Commis, Bakery Commis, and Housekeeping Manager. Candidates with hotel experience only are eligible to apply. Interested candidates can share their resumes via email or contact the HR team directly.",
+  responsibilities: [
+    "Prepare and execute dishes according to the assigned kitchen section.",
+    "Maintain food quality, consistency, and presentation standards.",
+    "Follow kitchen hygiene, cleanliness, and food safety standards.",
+    "Handle daily kitchen operations and assigned responsibilities.",
+    "Maintain proper coordination with kitchen and hotel staff.",
+    "Ensure smooth housekeeping operations and maintain cleanliness standards."
+  ],
+  requirements: [
+    "Hotel experience is mandatory.",
+    "Relevant experience in the applied position.",
+    "Knowledge of kitchen operations and food preparation for Commis roles.",
+    "Ability to maintain food quality and hygiene standards.",
+    "Relevant housekeeping management experience for the Housekeeping Manager position."
+  ],
+  jobRoles: [
+    "Chinese Commis - 1 to 2 Openings",
+    "Pantry Commis - 1 to 2 Openings",
+    "South Indian Commis - 1 to 2 Openings",
+    "Continental Commis - 1 to 2 Openings",
+    "Bakery Commis - 3 Openings or OJT",
+    "Housekeeping Manager - Openings Not Specified"
+  ],
+  benefits: [],
+  contact: {
+    name: "HR Team - The Manohar",
+    email: "hrm@themanohar.com",
+    phone: "9246228366",
+    companyLocation: "Begumpet, Hyderabad"
+  },
+  image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&auto=format&fit=crop&q=60"
 },
+{
+  id: 16,
+  title: "Continental CDP / DCDP",
+  category: "Chef",
+  company: "Not Specified",
+  location: "Gandipet, Hyderabad",
+  salary: "₹28,000",
+  experience: "Not Specified",
+  openings: 1,
+  employmentType: "Not Specified",
+  urgent: false,
+  description: "Hiring Continental Chefs for CDP/DCDP positions at Gandipet, Hyderabad. Candidates should have good knowledge of Continental cuisine and various cooking techniques, with expertise in marinades, seasonings, sauces, and flavour profiles. Basic knowledge of nutrition and food composition is required. Maintaining consistency in food quality and execution is essential. Salary offered is ₹28,000.",
+  responsibilities: [
+    "Prepare and execute Continental cuisine dishes.",
+    "Apply appropriate cooking techniques and methods.",
+    "Prepare marinades, seasonings, sauces, and flavour combinations.",
+    "Maintain consistent food quality and presentation.",
+    "Follow kitchen hygiene and food safety standards.",
+    "Ensure consistency in kitchen operations and food execution."
+  ],
+  requirements: [
+    "Good knowledge of Continental cuisine.",
+    "Knowledge of various cooking techniques.",
+    "Expertise in marinades, seasonings, sauces, and flavour profiles.",
+    "Basic knowledge of nutrition and food composition.",
+    "Ability to maintain consistency in food quality and execution."
+  ],
+  jobRoles: [
+    "Continental Chef de Partie (CDP)",
+    "Continental Demi Chef de Partie (DCDP)"
+  ],
+  benefits: [],
+  contact: {
+    name: "Arijit K. Yadav",
+    email: "resumes.arijit.k.yadav@gmail.com",
+    phone: "9966542346",
+    companyLocation: "Gandipet, Hyderabad"
+  },
+  image: "https://images.unsplash.com/photo-1661505300192-f2eef03a3876?w=500&auto=format&fit=crop&q=60"
+}
 ];

@@ -112,7 +112,7 @@ export const jobSeekers = [
     resume: "https://drive.google.com/open?id=1ETbb_4K0mzJsfbtq3M3gdndTl94Z6u-L",
 },
 {
-  id: 10,
+  id: 11,
   name: "Suresh",
   photo: "",
   jobTitle: "Senior Chef de Partie",
@@ -124,5 +124,18 @@ export const jobSeekers = [
   phone: "9503698766",
   email: "suresh.scorpions33@gmail.com",
   resume: "https://drive.google.com/open?id=15w3H2a5cgpOp6Yx_d2gVepGNWzdhZtmO",
+},{
+  id: 12,
+  name: "Nandeti Sagarababu",
+  photo: "",
+  jobTitle: "Executive Chef",
+  experience: "5+ years",
+  experienceDetails: "Currently looking for a job. Has 5+ years of professional kitchen experience.",
+  workingStatus: "Looking for Job",
+  location: "Hyderabad",
+  expectedSalary: "₹1,50,000 / month",
+  phone: "9618711275",
+  email: "sagarbabu1981@gmail.com",
+  resume: "https://drive.google.com/open?id=1zZo-9vLzfiykgwzplrdwOCGLMgC1JQ7m",
 },
 ];
