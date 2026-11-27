@@ -109,7 +109,7 @@ export const jobSeekers = [
     expectedSalary: "₹1,00,000 / month",
     phone: "6281464449",
     email: "subhanshaik37@yahoo.co.in",
-    resume: "https://drive.google.com/open?id=1ETbb_4K0mzJsfbtq3M3gdndTl94Z6u-L",
+    resume: "https://docs.google.com/document/d/1ETbb_4K0mzJsfbtq3M3gdndTl94Z6u-L",
 },
 {
   id: 11,

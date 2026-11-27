@@ -11,7 +11,7 @@ import JobSeekersPage from "./pages/JobSeekersPage";
 import InterviewPrepPage from "./pages/InterviewPrepPage";
 import EmployersPage from './pages/EmployersPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
-import InternshipsPage from './pages/InternshipsPage.jsx';
+// import InternshipsPage from './pages/InternshipsPage.jsx';
 import ChefProtectionPage from './pages/ChefProtectionPage.jsx';
 import EventsPage from './pages/EventsPage.jsx';
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
@@ -34,8 +34,8 @@ function App() {
             {/* Jobs */}
             <Route path="/jobs" element={<JobsPage />} />
 
-            {/* Internships */}
-            <Route path="/internships" element={<InternshipsPage />} />
+            {/* Internships
+            <Route path="/internships" element={<InternshipsPage />} /> */}
 
             {/* Careers */}
             <Route path="/careers" element={<CareersPage />} />

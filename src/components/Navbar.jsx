@@ -3,7 +3,6 @@ import { useState } from 'react';
 import {
   FiMenu,
   FiX,
-  FiChevronDown,
   FiShield,
   FiCalendar,
 } from 'react-icons/fi';
@@ -54,36 +53,13 @@ const Navbar = () => {
               About
             </Link>
 
-            {/* Find Jobs Dropdown */}
-            <div className="relative group h-full flex items-center">
-
-              <button
-                type="button"
-                className="flex items-center text-slate-600 hover:text-orange-500 font-medium transition-colors whitespace-nowrap"
-              >
-                Find Jobs
-
-                <FiChevronDown className="ml-1 w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
-              </button>
-
-              <div className="absolute top-[70px] -left-4 w-64 bg-white border border-slate-100 shadow-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden z-50">
-
-                <Link
-                  to="/jobs"
-                  className="px-5 py-3.5 text-slate-700 hover:bg-orange-50 hover:text-orange-600 font-medium transition-colors border-b border-slate-50"
-                >
-                  Full Time Jobs
-                </Link>
-
-                <Link
-                  to="/internships"
-                  className="px-5 py-3.5 text-slate-700 hover:bg-orange-50 hover:text-orange-600 font-medium transition-colors"
-                >
-                  5-Star Hotel Internships
-                </Link>
-
-              </div>
-            </div>
+            {/* Find Jobs */}
+            <Link
+              to="/jobs"
+              className="text-slate-600 hover:text-orange-500 font-medium transition-colors whitespace-nowrap"
+            >
+              Find Jobs
+            </Link>
 
             {/* Career Paths */}
             <Link
@@ -197,29 +173,13 @@ const Navbar = () => {
             </Link>
 
             {/* Find Jobs */}
-            <div className="pt-2 pb-1 bg-slate-50 rounded-xl px-2 my-2 border border-slate-100">
-
-              <p className="px-3 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
-                Find Jobs
-              </p>
-
-              <Link
-                to="/jobs"
-                onClick={closeMenu}
-                className="block px-3 py-3 pl-6 text-slate-800 font-semibold hover:text-orange-600 rounded-md"
-              >
-                Full Time Jobs
-              </Link>
-
-              <Link
-                to="/internships"
-                onClick={closeMenu}
-                className="block px-3 py-3 pl-6 text-slate-800 font-semibold hover:text-orange-600 rounded-md border-t border-slate-200/60"
-              >
-                5-Star Hotel Internships
-              </Link>
-
-            </div>
+            <Link
+              to="/jobs"
+              onClick={closeMenu}
+              className="block px-3 py-3 text-slate-700 font-medium hover:bg-slate-50 rounded-md"
+            >
+              Find Jobs
+            </Link>
 
             {/* Career Paths */}
             <Link

@@ -633,44 +633,5 @@ export const jobs = [
   },
   image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&auto=format&fit=crop&q=60"
 },
-{
-  id: 16,
-  title: "Continental CDP / DCDP",
-  category: "Chef",
-  company: "Not Specified",
-  location: "Gandipet, Hyderabad",
-  salary: "₹28,000",
-  experience: "Not Specified",
-  openings: 1,
-  employmentType: "Not Specified",
-  urgent: false,
-  description: "Hiring Continental Chefs for CDP/DCDP positions at Gandipet, Hyderabad. Candidates should have good knowledge of Continental cuisine and various cooking techniques, with expertise in marinades, seasonings, sauces, and flavour profiles. Basic knowledge of nutrition and food composition is required. Maintaining consistency in food quality and execution is essential. Salary offered is ₹28,000.",
-  responsibilities: [
-    "Prepare and execute Continental cuisine dishes.",
-    "Apply appropriate cooking techniques and methods.",
-    "Prepare marinades, seasonings, sauces, and flavour combinations.",
-    "Maintain consistent food quality and presentation.",
-    "Follow kitchen hygiene and food safety standards.",
-    "Ensure consistency in kitchen operations and food execution."
-  ],
-  requirements: [
-    "Good knowledge of Continental cuisine.",
-    "Knowledge of various cooking techniques.",
-    "Expertise in marinades, seasonings, sauces, and flavour profiles.",
-    "Basic knowledge of nutrition and food composition.",
-    "Ability to maintain consistency in food quality and execution."
-  ],
-  jobRoles: [
-    "Continental Chef de Partie (CDP)",
-    "Continental Demi Chef de Partie (DCDP)"
-  ],
-  benefits: [],
-  contact: {
-    name: "Arijit K. Yadav",
-    email: "resumes.arijit.k.yadav@gmail.com",
-    phone: "9966542346",
-    companyLocation: "Gandipet, Hyderabad"
-  },
-  image: "https://images.unsplash.com/photo-1661505300192-f2eef03a3876?w=500&auto=format&fit=crop&q=60"
-}
+
 ];
